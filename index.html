@@ -4,13 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="styles/reset.css"/>
+    <link rel="stylesheet" href="styles/main.css"/>
+    <link rel="stylesheet" href="styles/confirmation.css"/>
     
     <title>Driven Eats</title>
     
 </head>
 <body>
+
+<div class="vignette off">
+    <div class="confirm">
+        <span>Confirme seu pedido</span>
+        <div class="prato">
+            <span class="name"></span>
+            <span class="price"></span>
+        </div>
+        <div class="bebida">
+            <span class="name"></span>
+            <span class="price"></span>
+        </div>
+        <div class="sobremesa">
+            <span class="name"></span>
+            <span class="price"></span>
+        </div>
+        <div class="preco">
+            <span class="name">Total</span>
+            <span class="price"></span>
+        </div>
+        <div class="btn next">Proximo</div>
+        <div class="btn cancel">Cancelar</div>
+    </div>
+
+    <div class="endereco desactive">
+        <div class="yourName">
+            <span>Seu nome</span>
+            <input id="userName" type="text">
+        </div>
+        <div class="yourMail">
+            <span>Bairro e Rua</span>
+            <input id="userMail" type="text">
+        </div>
+        <div class="btn finish">Tudo certo, pode pedir</div>
+        <div class="btn cancel">Cancelar</div>
+
+    </div>
+</div>
 <div class="driven-eats">
     <div class="topo">
         <h1>DrivenEats</h1>
@@ -18,33 +57,35 @@
     </div>
     
     <div class="categoria-prato">
-        <p>Primeiro, seu prato</p>  
+        <div class="title">Primeiro, seu prato</div>  
         <div class="carrossel">
 
         </div>
     </div>
 
     <div class="categoria-prato">
-        <p>Agora, sua bebida</p>  
+        <div class="title">Agora, sua bebida</div>  
         <div class="carrossel">
 
         </div>
     </div>
 
     <div class="categoria-prato">
-        <p>Por fim, sua sobremesa</p>  
+        <div class="title">Por fim, sua sobremesa</div>  
         <div class="carrossel">
 
         </div>
     </div>
 
     <div class="final">
-        <div class="button">Pedido</div>
+        <div class="button">Selecione os 3 itens
+            para fechar o pedido</div>
     </div>
 </div>
 
 
-
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="scripts.js"></script>
 </body>
 </html>

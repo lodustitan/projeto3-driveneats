@@ -1,0 +1,103 @@
+.vignette {
+  font-family: "Roboto";
+  color: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  background-color: rgba(255, 255, 255, 0.8);
+  height: 100%;
+  width: 100%;
+}
+.vignette.off {
+  display: none;
+}
+.vignette .confirm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  height: 300px;
+  background-color: #50D074;
+  border-radius: 0.5rem;
+}
+.vignette .confirm .prato,
+.vignette .confirm .bebida,
+.vignette .confirm .sobremesa,
+.vignette .confirm .preco {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+.vignette .confirm.desactive {
+  display: none;
+}
+.vignette .confirm .btn.next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  width: 80%;
+  height: 2.5rem;
+  border-radius: 1rem;
+  background-color: #FFF;
+  color: #50D074;
+}
+.vignette .endereco {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 90%;
+  height: 300px;
+  background-color: #50D074;
+  border-radius: 0.5rem;
+}
+.vignette .endereco .yourName {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.vignette .endereco .yourName span {
+  font-size: 1.5rem;
+}
+.vignette .endereco .yourName input {
+  border: none;
+  border-radius: 1rem;
+  padding: 10px 20px;
+}
+.vignette .endereco .yourMail {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.vignette .endereco .yourMail span {
+  font-size: 1.5rem;
+}
+.vignette .endereco .yourMail input {
+  border: none;
+  border-radius: 1rem;
+  padding: 10px 20px;
+}
+.vignette .endereco.desactive {
+  display: none;
+}
+.vignette .endereco .btn.finish {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  width: 80%;
+  height: 2.5rem;
+  border-radius: 1rem;
+  background-color: #FFF;
+  color: #50D074;
+}
+
+/*# sourceMappingURL=confirmation.css.map */
