@@ -2,7 +2,7 @@
 const produto_1 = [];
 const produto_2 = [];
 const produto_3 = [];
-const telefone = "5521974128800";
+const telefone = "5521968845839";
 
 function produto(nome, djamo, desc, price, img){
     
@@ -122,11 +122,11 @@ function generatePaid(){
             nome_3 = x;
         }
     })
-    document.querySelector(".prato .name").textContent = nome_1.nome;
+    document.querySelector(".prato .name").textContent = nome_1.nome.join('');
     document.querySelector(".prato .price").textContent = nome_1.preço.toFixed(2);
-    document.querySelector(".bebida .name").textContent = nome_2.nome;
+    document.querySelector(".bebida .name").textContent = nome_2.nome.join('');
     document.querySelector(".bebida .price").textContent = nome_2.preço.toFixed(2);
-    document.querySelector(".sobremesa .name").textContent = nome_3.nome;
+    document.querySelector(".sobremesa .name").textContent = nome_3.nome.join('');
     document.querySelector(".sobremesa .price").textContent = nome_3.preço.toFixed(2);
     document.querySelector(".preco .price").textContent = "R$ " + (nome_1.preço + nome_2.preço + nome_3.preço).toFixed(2);
     document.querySelector(".btn.next").addEventListener('click', function(e){
@@ -144,7 +144,7 @@ function generatePaid(){
         let user_name = document.querySelector("input#userName").value;
         let user_mail = document.querySelector("input#userMail").value;
         let preço = nome_1.preço + nome_2.preço + nome_3.preço;
-        let texto = `Olá, gostaria de fazer o pedido: \n- Prato: ${nome_1.nome} \n- Bebida: ${nome_2.nome}\n- Sobremesa: ${nome_3.nome} \n\nTotal: R$ ${preço.toFixed(2)}\n\nNome: ${user_name}\nEndereço: ${user_mail}`
+        let texto = `Olá, gostaria de fazer o pedido: \n- Prato: ${nome_1.nome.join('')} \n- Bebida: ${nome_2.nome.join('')}\n- Sobremesa: ${nome_3.nome.join('')} \n\nTotal: R$ ${preço.toFixed(2)}\n\nNome: ${user_name}\nEndereço: ${user_mail}`
         texto = encodeURIComponent(texto)
         window.open(`https://wa.me/${telefone}?text=${texto}`)
     });
